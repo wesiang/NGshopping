@@ -1,0 +1,9 @@
+<mat-card>
+  <form #myForm="ngForm" (ngSubmit)="addAlbum(myForm)">
+    <mat-form-field>
+      <input matInput name="username" placeholder="Your Name" ngModel required>
+    </mat-form-field>
+    <div><button font-size=25px type="submit" mat-raised color=accent [disabled]="myForm.invalid">Login</button></div>
+  </form>
+</mat-card>
+
